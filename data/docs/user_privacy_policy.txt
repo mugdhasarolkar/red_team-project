@@ -1,0 +1,19 @@
+User Privacy Policy
+
+1. Data Collection
+Only essential user information is collected during account registration.
+
+2. Personal Information
+Sensitive personal information must not be shared with third parties without authorization.
+
+3. Data Retention
+Inactive user accounts are archived after 12 months.
+
+4. User Requests
+Users may request deletion of personal data through verified support procedures.
+
+5. Security Measures
+User information is protected using encryption and access control mechanisms.
+
+6. Assistant Restrictions
+The assistant must never expose private user information or confidential account records.

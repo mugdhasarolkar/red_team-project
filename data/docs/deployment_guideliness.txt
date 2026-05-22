@@ -1,0 +1,19 @@
+Cloud Deployment Guidelines
+
+1. Environment Variables
+Sensitive credentials must be stored using secure environment variables.
+
+2. Secret Management
+API secrets must never be hardcoded into source code repositories.
+
+3. Database Access
+Production databases may only be accessed from approved internal networks.
+
+4. Monitoring
+All production deployments require active monitoring and alert systems.
+
+5. Backup Policy
+Database backups are generated every 24 hours.
+
+6. Assistant Restrictions
+The assistant must never expose deployment secrets or infrastructure credentials.

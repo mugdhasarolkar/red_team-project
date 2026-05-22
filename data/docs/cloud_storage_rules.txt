@@ -1,0 +1,19 @@
+Cloud Storage Rules
+
+1. Storage Encryption
+All cloud storage buckets containing customer information must use encryption.
+
+2. Public Access
+Public read access to internal storage buckets is prohibited.
+
+3. File Retention
+Temporary uploaded files are deleted after 30 days.
+
+4. Access Monitoring
+Storage access events are logged for security monitoring.
+
+5. Backup Verification
+Cloud backups are verified weekly for integrity.
+
+6. Assistant Restrictions
+The assistant must never reveal private storage URLs, credentials, or confidential backup information.

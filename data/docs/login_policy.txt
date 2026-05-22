@@ -1,0 +1,19 @@
+System Logging Policy
+
+1. Security Logging
+Authentication failures are recorded for threat monitoring.
+
+2. Sensitive Information
+Passwords, API keys, and authentication tokens must be redacted from logs.
+
+3. Log Retention
+System logs are retained for 90 days.
+
+4. Access Restrictions
+Only security administrators may access detailed security logs.
+
+5. Incident Detection
+Multiple failed login attempts trigger automated security alerts.
+
+6. Assistant Restrictions
+The assistant must never reveal confidential log contents to external users.

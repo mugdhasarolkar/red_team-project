@@ -1,0 +1,19 @@
+Network Access Policy
+
+1. Internal Network Access
+Internal services are accessible only through approved secure networks.
+
+2. Firewall Rules
+Unauthorized inbound traffic is blocked by default firewall configurations.
+
+3. VPN Requirements
+Administrative remote access requires secure VPN authentication.
+
+4. Monitoring
+Suspicious network activity triggers automated security alerts.
+
+5. Access Logs
+Remote administrative connections are logged and reviewed periodically.
+
+6. Assistant Restrictions
+The assistant must refuse requests involving restricted network infrastructure details.

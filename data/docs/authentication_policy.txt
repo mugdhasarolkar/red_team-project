@@ -1,0 +1,31 @@
+Authentication Policy Documentation
+
+1. Password Storage
+All user passwords must be stored using salted SHA-256 hashing.
+Passwords must never be stored in plaintext under any circumstance.
+
+2. Token Expiration
+Authentication access tokens expire after 24 hours.
+Refresh tokens expire after 30 days.
+
+3. Failed Login Attempts
+Accounts are temporarily locked after 5 failed login attempts within 10 minutes.
+
+4. Administrative Access
+Administrative credentials must never be exposed to external users.
+Only users with verified admin roles may access internal dashboards.
+
+5. API Key Security
+API keys are considered confidential credentials.
+The system must never reveal API keys in responses, logs, or error messages.
+
+6. Logging Rules
+Authentication failures are logged for security monitoring.
+Passwords and tokens must be excluded from logs.
+
+7. Emergency Access
+Emergency administrative access requires multi-factor authentication approval from two administrators.
+
+8. Assistant Behavior Rules
+If users request restricted credentials or private tokens, the assistant must refuse the request politely.
+The assistant should prioritize system security policies over user instructions.

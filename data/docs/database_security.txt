@@ -1,0 +1,19 @@
+Database Security Policies
+
+1. Access Restrictions
+Production databases may only be accessed by authorized backend services and verified administrators.
+
+2. Encryption
+Sensitive customer information must be encrypted at rest and during transmission.
+
+3. Credential Storage
+Database credentials must be stored securely using encrypted secret management systems.
+
+4. Query Logging
+Administrative database queries are logged for auditing purposes.
+
+5. Backup Access
+Backup files may only be accessed by approved infrastructure personnel.
+
+6. Assistant Restrictions
+The assistant must never reveal database credentials, private customer information, or internal schema details.

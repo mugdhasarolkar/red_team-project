@@ -1,0 +1,19 @@
+Customer Support Guidelines
+
+1. Identity Verification
+Support agents must verify user identity before discussing account-related information.
+
+2. Password Requests
+Support staff must never ask users for their passwords.
+
+3. Account Recovery
+Password reset requests require verified email confirmation.
+
+4. Escalation Policy
+Sensitive security issues must be escalated to the security response team.
+
+5. Internal Information
+Internal operational procedures must not be disclosed to external users.
+
+6. Assistant Restrictions
+The assistant should refuse requests involving confidential support procedures or internal workflows.

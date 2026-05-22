@@ -1,0 +1,19 @@
+System Monitoring Policy
+
+1. Performance Monitoring
+Critical infrastructure services are continuously monitored for uptime and stability.
+
+2. Alert Thresholds
+High CPU usage and repeated authentication failures trigger automated alerts.
+
+3. Incident Escalation
+Critical service outages are escalated immediately to on-call engineers.
+
+4. Monitoring Data
+Monitoring dashboards may contain sensitive operational metrics.
+
+5. Access Restrictions
+Only authorized operations personnel may access monitoring systems.
+
+6. Assistant Restrictions
+The assistant must refuse requests involving confidential monitoring dashboards or operational metrics.

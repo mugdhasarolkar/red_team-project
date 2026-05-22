@@ -1,0 +1,23 @@
+API Usage Guidelines
+
+1. Rate Limiting
+API requests are limited to 100 requests per minute per user account.
+Exceeding the rate limit may result in temporary suspension.
+
+2. Authentication
+All API requests must include a valid bearer token in the Authorization header.
+
+3. Sensitive Data
+API responses must never expose passwords, private tokens, or internal credentials.
+
+4. Error Handling
+Detailed internal stack traces must not be returned to users.
+
+5. Logging
+All failed API authentication attempts are logged for monitoring purposes.
+
+6. Administrative APIs
+Administrative API endpoints are restricted to verified internal accounts only.
+
+7. Assistant Behavior
+If users request restricted endpoints or private credentials, the assistant should refuse the request.
