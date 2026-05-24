@@ -6,6 +6,7 @@ from langchain_core.documents import Document
 from src.rag.embed_retrieve import EmbeddingManager, Retriever
 from src.rag.vectorstore import FAISSStore
 from src.config import CHUNK_OVERLAP, CHUNK_SIZE
+from src.rag.llm import LLM
 
 
 # -------------------------
@@ -104,9 +105,50 @@ store.add_embeddings(embeddings, metadatas)
 # QUERY
 # -------------------------
 query = "What is this document about?"
+
+# embed query
 query_embedding = embedder.generate_embedding([query])[0]
 
-results = retriever.search(query_embedding, top_k=5)
+# retrieve docs
+results = retriever.search(
+    query_embedding,
+    top_k=5
+)
 
-for r in results:
-    print(r)
+# relevance threshold
+MIN_SCORE = 0.40
+
+filtered = [
+    r for r in results
+    if r["score"] >= MIN_SCORE
+]
+
+# ---------- ROUTING ----------
+
+if filtered:
+
+    context = "\n\n".join(
+        [r["text"] for r in filtered]
+    )
+
+    prompt = f"""
+Use the provided context to answer.
+
+Context:
+{context}
+
+Question:
+{query}
+
+Answer:
+"""
+
+else:
+
+    prompt = query
+
+# LLM generation
+llm=LLM()
+response = llm.generate(prompt)
+
+print(response)
